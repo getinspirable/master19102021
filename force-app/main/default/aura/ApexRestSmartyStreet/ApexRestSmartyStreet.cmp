@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId"
+                controller="ApexRestSmartyStreetController">
+
+<lightning:card title="Validating Address">
+  <div class="slds-p-horizontal_small">
+    <lightning:input  label="Address1" name="add1" aura:id="add1" placeholder="Enter Address1"></lightning:input>
+   <lightning:input   label="Address2" name="add2" aura:id="add2" placeholder="Enter Address2"></lightning:input>
+   <lightning:input    label="city" name="city"  aura:id="city" placeholder="Enter City"></lightning:input>
+   <lightning:input  label="state" name="state"   aura:id="state" placeholder="Enter State"></lightning:input>
+   <lightning:input    label="ZipCode" name="zipcode"  aura:id="zipcode" placeholder="Enter ZipCode"></lightning:input>
+   <lightning:button variant="brand" label="validate" onclick="{!c.onClickHandular}" title='onclick'></lightning:button>
+     
+  </div> 
+</lightning:card>
+</aura:component>

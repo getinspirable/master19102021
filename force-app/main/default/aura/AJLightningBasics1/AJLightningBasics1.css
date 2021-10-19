@@ -1,0 +1,17 @@
+.THIS .red {
+    color : red;
+    background-color: rgb(37, 36, 36);
+ 
+}
+.THIS .green {
+    color : green;
+    background-color: rgb(48, 45, 45);
+}
+.THIS .yellow {
+    color : yellow;
+    background-color: rgb(88, 84, 84);
+}
+.THIS.black {
+    color : black;
+    background-color: rgb(73, 70, 70);
+}

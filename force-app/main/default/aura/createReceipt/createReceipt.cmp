@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction">
+   <!-- <aura:attribute name="fields" type="String[]" default="['Name','Amount__c','Paid_Date__c','Mode_pay__c']" />
+    <aura:attribute name="recordId" type="Id"/>
+    <lightning:recordForm
+        aura:id="myRecordForm"
+        objectApiName="Receipt__C"
+        fields="{!v.fields}"
+        columns="2"
+        onsubmit="{!c.handleSubmit}" />-->
+
+        <lightning:card title="sample">
+            <div class="slds-box slds-text-heading_medium">
+                Fields for a00R0000000x5hnIAA
+            </div>
+        </lightning:card>
+</aura:component>

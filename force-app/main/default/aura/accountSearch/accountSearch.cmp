@@ -1,0 +1,15 @@
+<aura:component
+controller = "AccController"
+            implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+            <aura:registerEvent name="accountSearchComEvent" type="c:accountSearchComEvent"/>       
+    <lightning:card title="Search Account" iconName="standard:account">
+    <div class="slds-p-horizontal_small slds-text-heading_medium">
+        <lightning:input type="name" name="searchKey" label="Account Name" aura:id="searchKey" onchange="{!c.onchangeFireEvent}"></lightning:input>
+    </div>
+    <div class="slds-p-horizontal_medium">
+         <c:accountSearchChild/>
+     </div>
+</lightning:card>
+
+
+</aura:component>

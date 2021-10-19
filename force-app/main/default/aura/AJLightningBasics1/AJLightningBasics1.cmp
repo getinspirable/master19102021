@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+  <lightning:card title="Apply Css to input text">
+      <div class="slds-p-horizontal_small">
+         <!--<lightning:input type="text" class="black" label="input1" aura:id="input1"  name="input1" placeholder="enter text"></lightning:input>--> 
+         <div aura:id="input1" class="black slds-text-align_center ">sample text to change color</div>
+         <lightning:button variant="base" label="Red" title="Looks like a link" onclick="{!c.handleClick1}" class=""></lightning:button>
+        <lightning:button variant="base" label="Green" title="Looks like a link" onclick="{!c.handleClick2}" class="slds-p-left_small"></lightning:button>
+        <lightning:button variant="base" label="yellow" title="Looks like a link" onclick="{!c.handleClick3}" class="slds-p-left_small"></lightning:button>
+      </div>
+  </lightning:card>
+</aura:component>

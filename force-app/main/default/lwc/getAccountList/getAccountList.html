@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="List of Accounts" icon-name="standard:account">
+        <lightning-layout vertical-align="center" >
+            <lightning-layout-item padding="around-small">
+                <lightning-input label="Enter Account Name" value={searchKey} onchange={handleOnChange}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <lightning-button label="Click me" varient="brand" onclick={handleOnClick}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+        
+       <lightning-layout vertical-align="center" multiple-rows>
+          <template if:true={acctList}>
+                 <template for:each={acctList} for:item="item">
+                    <c-account-tile key={item.Id} account={item}></c-account-tile>
+            <!--<lightning-layout-item key={item.Id} padding="around-small">
+                        <p><lightning-formatted-text value ={item.Name}></lightning-formatted-text></p>
+                        <p><lightning-formatted-phone value={item.Phone}></lightning-formatted-phone></p>
+                        
+                    </lightning-layout-item>--> 
+                 </template>
+              </template>
+         </lightning-layout>
+    </lightning-card>
+</template>

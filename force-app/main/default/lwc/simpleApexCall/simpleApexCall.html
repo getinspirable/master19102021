@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Calling Apex methods" icon-name="custom:custom63">
+        <lightning-layout vertical-align="center">
+          <lightning-layout-item padding = "around-small">
+               <template if:true={options}>
+                   <template for:each={options} for:item=option for:index="index">
+                         {option.key} ==> {option.value}
+                    </template>
+               </template>
+          </lightning-layout-item>
+          <lightning-layout-item padding = "around-small">
+           <template if:true={WiredString}>
+            Here is text from wiredapex: {WiredString}
+           </template> 
+          </lightning-layout-item>
+       <lightning-layout-item padding = "around-small">
+           /<lightning-button label="Click me"  varient="brand" onclick={onclickHandular}></lightning-button>
+       </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+    
+</template>

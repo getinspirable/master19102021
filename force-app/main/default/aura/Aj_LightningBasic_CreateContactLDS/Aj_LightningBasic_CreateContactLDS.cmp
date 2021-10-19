@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId">
+        <aura:attribute name="fields" type="String[]" default="['FirstName','LastName','AccountId','Email','Phone']" />
+       <lightning:card title="New Contact" iconName="standard:contact" > 
+        <div class=" slds-box_x-small">
+        <lightning:recordForm
+            aura:id="createContact"
+           
+            objectApiName="Contact"
+            fields="{!v.fields}"
+            columns="2"
+           
+            onsubmit="{!c.handleSubmit}" />
+        </div>
+        </lightning:card>
+    </aura:component>

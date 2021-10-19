@@ -1,0 +1,32 @@
+/*.slds-card__header{
+  
+    font-weight :100;
+    font-size: x-small;
+    padding-top: 0;
+    color : red;
+}
+.THIS .headingcolor{
+
+    font-weight :100;
+    color : greenyellow;
+    background-color: hotpink;
+} 
+.THIS .slds-card__header{
+    background-color: rgb(242, 255, 240);
+}
+.THIS .slds-card__body{
+    background-color: cyan;
+}.slds-card__body{
+    margin-top: 0;
+    margin-bottom: 0;
+  
+}*/
+
+.headingcolor{
+    
+    background-color: hotpink;
+} 
+.slds-text-heading_small{
+    color : rgb(255, 71, 47);
+    font-size : var(--lwc-fontSize),2rem;
+}
